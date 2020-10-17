@@ -7,6 +7,8 @@ from rest_framework import status
 from .models import Employees
 from .serializers import EmployeesSerializer
 
+def homepage(request):
+    return render(request,'webapp/homepage.html')
 
 class EmployeeList(APIView):
     
